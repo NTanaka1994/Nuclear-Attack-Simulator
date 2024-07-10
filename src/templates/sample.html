@@ -29,6 +29,7 @@
       }
     </style>
     {{ err | safe }}
+    <table><tr><td>
     <form method="GET" action="bomb">
       <table>
         <tr><td colspan="3">爆心地情報</td></tr>
@@ -84,7 +85,7 @@
     {{ state | safe }}
       
   </head>
-  
+</td><td>
   <body onload="init()">
     <script>
       function init(){
@@ -203,7 +204,10 @@
     </script>
     
     <div id="mapcontainer" style="width:600px;height:600px"></div>
-    {{dst2 | safe}}
+
   </body>
+  </td></tr>
+  <tr><td colspan="2">{{dst2 | safe}}</td></tr>
+</table>
 </html>
 
